@@ -11,7 +11,7 @@ This gem uses the [reviewer](https://github.com/dokspot/reviewer) gem to power t
 
 You can add it to your Gemfile with:
 ```ruby
-gem 'reviewer', github: 'dokspot/publisher'
+gem 'publisher', github: 'dokspot/publisher'
 ```
 
 Then run
