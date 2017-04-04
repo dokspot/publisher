@@ -64,6 +64,13 @@ class Arcticle < ActiveRecord::Base
   def reviewers
     Reviewer.all
   end
+  
+  private
+  
+  def deep_clone
+    # all the associations and attributes that should be clone to the next version
+    # see https://github.com/moiristo/deep_cloneable
+  end
 end
 ```
 
