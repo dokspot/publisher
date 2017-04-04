@@ -80,7 +80,7 @@ Inherits API calls from `reviewable!`, see [reviewer](https://github.com/dokspot
 Additionally:
 ```ruby
 # Scope
-Article.publishable           # returns all objects that are ready to be published
+Article.publishable           # returns all objects that are ready to be published (same result as .reviewed)
 Article.published             # returns all objects that are published
 Article.retired               # returns all objects that are retired
 # States
