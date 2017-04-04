@@ -7,17 +7,17 @@ Gem::Specification.new do |spec|
   spec.name          = "publisher"
   spec.version       = Publisher::VERSION
   spec.authors       = ["cderche"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.email         = ["cyrille.derche@dokspot.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "publisher is the publishing feature used in dokspot."
+  spec.description   = "publisher is the publishing feature used in dokspot. It can be easily attached to any model and allows the model to be published by users"
+  spec.homepage      = "http://dokspot.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = ""
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -32,4 +32,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "cucumber-rails"
+  spec.add_development_dependency "rspec-expectations"
+  spec.add_development_dependency "database_cleaner"
+  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "rails"
+  spec.add_development_dependency "activerecord"
+  spec.add_development_dependency "activesupport"
 end
